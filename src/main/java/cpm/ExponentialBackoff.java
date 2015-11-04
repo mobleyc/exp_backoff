@@ -2,6 +2,12 @@ package cpm;
 
 import java.util.Random;
 
+/**
+ * A condensed version of:
+ *     1. https://github.com/Netflix/astyanax/blob/master/astyanax-core/src/main/java/com/netflix/astyanax/retry/ExponentialBackoff.java
+ *     2. https://github.com/Netflix/astyanax/blob/master/astyanax-core/src/main/java/com/netflix/astyanax/retry/BoundedExponentialBackoff.java
+ *     3. https://github.com/Netflix/astyanax/blob/master/astyanax-core/src/main/java/com/netflix/astyanax/retry/SleepingRetryPolicy.java
+ */
 public class ExponentialBackoff {
 
     private static final int DEFAULT_MAX_ATTEMPTS = 10;
